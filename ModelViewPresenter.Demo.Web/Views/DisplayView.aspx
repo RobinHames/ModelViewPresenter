@@ -19,5 +19,7 @@
     <h3>You entered the following:</h3>
     <div>
         Name: <asp:Label ID="lblName" runat="server" Text="Label"></asp:Label>        
+        <br />
+        <asp:Button ID="btnSubmit" runat="server" OnClick="btnSubmit_Click" Text="Back" />
     </div>
 </asp:Content>

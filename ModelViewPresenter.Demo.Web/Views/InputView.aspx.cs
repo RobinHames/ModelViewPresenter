@@ -20,11 +20,25 @@ namespace ModelViewPresenter.Demo.Web.Views
 
         Action _onSubmit;
 
+        /// <summary>
+        /// Set a callback action to run when the user submits the InputForm
+        /// </summary>
+        /// <param name="onSubmit"></param>
+        /// <remarks>
+        /// This is the implementation of IInputView.setSubmitAction
+        /// </remarks>
         public void setSubmitAction(Action onSubmit)
         {
             _onSubmit = onSubmit;
         }
 
+        /// <summary>
+        /// Get the submitted user data
+        /// </summary>
+        /// <returns></returns>
+        /// <remarks>
+        /// This is the implementation of IInputView.getFormData
+        /// </remarks>
         public InputViewModel getFormData()
         {
             var inputViewData = new InputViewModel();
@@ -34,6 +48,7 @@ namespace ModelViewPresenter.Demo.Web.Views
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
+            // Call the onSubmit callback method in the presenter
             if (this._onSubmit != null)
                 this._onSubmit();
         }

@@ -1,4 +1,5 @@
-﻿
+﻿using System;
+
 namespace ModelViewPresenter.Demo.Presenter.Views
 {
     /// <summary>
@@ -11,5 +12,11 @@ namespace ModelViewPresenter.Demo.Presenter.Views
         /// </summary>
         /// <param name="formData"></param>
         void setFormData(ViewModels.DisplayViewModel formData);
+
+        /// <summary>
+        /// Set a callback action to run when the user submits the DisplayView
+        /// </summary>
+        /// <param name="onSubmit"></param>
+        void setSubmitAction(Action onSubmit);
     }
 }

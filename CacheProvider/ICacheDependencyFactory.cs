@@ -1,6 +1,9 @@
 ﻿
 namespace CacheProvider
 {
+    /// <summary>
+    /// Interface for a factory to create Cache Dependency instances
+    /// </summary>
     public interface ICacheDependencyFactory
     {
         T Create<T>()
