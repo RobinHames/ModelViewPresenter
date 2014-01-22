@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
+﻿
 using ModelViewPresenter.Demo.Presenter;
 
 namespace ModelViewPresenter.Demo.Web.MVP
